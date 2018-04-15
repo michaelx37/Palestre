@@ -1,0 +1,125 @@
+INSERT INTO `gym_list`(`gym_name`) VALUES 
+('Prova 0'), 
+('Prova 1'), 
+('Prova 2'), 
+('Prova 3'), 
+('Prova 4'), 
+('Prova 5'), 
+('Prova 6'), 
+('Prova 7'),
+('Prova 8'),
+('Prova 9'),
+('Prova 10'), 
+('Prova 11'), 
+('Prova 12'), 
+('Prova 13'), 
+('Prova 14'), 
+('Prova 15'), 
+('Prova 16'), 
+('Prova 17'),
+('Prova 18'),
+('Prova 19'),
+('Prova 20'), 
+('Prova 21'), 
+('Prova 22'), 
+('Prova 23'), 
+('Prova 24'), 
+('Prova 25'), 
+('Prova 26'), 
+('Prova 27'),
+('Prova 28'),
+('Prova 29'),
+('Prova 30'), 
+('Prova 31'), 
+('Prova 32'), 
+('Prova 33'), 
+('Prova 34'), 
+('Prova 35'), 
+('Prova 36'), 
+('Prova 37'),
+('Prova 38'),
+('Prova 39'),
+('Prova 40'), 
+('Prova 41'), 
+('Prova 42'), 
+('Prova 43'), 
+('Prova 44'), 
+('Prova 45'), 
+('Prova 46'), 
+('Prova 47'),
+('Prova 48'),
+('Prova 49'),
+('Prova 50'), 
+('Prova 51'), 
+('Prova 52'), 
+('Prova 53'), 
+('Prova 54'), 
+('Prova 55'), 
+('Prova 56'), 
+('Prova 57'),
+('Prova 58'),
+('Prova 59')
+
+
+
+
+
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 5;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 6;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 7;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 8;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 9;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 10;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 11;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 12;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 13;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 14;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 15;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 16;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 17;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 18;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 19;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 20;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 21;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 22;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 23;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 24;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 25;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 26;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 27;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 28;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 29;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 30;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 31;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 32;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 33;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 34;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 35;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 36;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 37;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 38;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 39;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 40;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 41;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 42;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 43;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 44;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 45;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 46;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 47;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 48;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 49;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 50;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 51;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 52;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 53;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 54;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 55;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 56;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 57;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 58;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 59;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 60;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 61;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 62;
+UPDATE `gym_list` SET `gym_icon` = '/sub/Avatars/usertile13.bmp' WHERE `gym_list`.`gym_id` = 63;

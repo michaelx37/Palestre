@@ -1,0 +1,100 @@
+$pageNum = 1;
+					
+	function maxPages() {
+		
+		$resPPage = 10;
+		
+		for ($qnr = 1; $qnr < 22; $qnr++) {
+			
+			$pagesRaw = round(/*$queryNumRows*/$qnr/$resPPage,0,PHP_ROUND_HALF_UP);
+			//echo $qnr."/10 = ".$qnr/$resPPage." arrotondato:  ".$pagesRaw."<br>";
+			
+			if ($pagesRaw == $qnr/$resPPage) {
+				$maxPages = $pagesRaw;
+				//echo "max pages (=):  ".$maxPages."<br><br>";
+			} elseif ($pagesRaw < $qnr/$resPPage) {
+				$maxPages = $pagesRaw+1;
+				//echo "max pages (+1):  ".$maxPages."<br><br>";
+			} else {
+				$maxPages = $pagesRaw;
+				//echo "max pages:  ".$maxPages."<br><br>";
+			}
+		}
+	}
+	maxPages();
+	
+	
+	
+<div class="header">        
+	<div class="left-header">
+		<a href="index.php">
+			<div class="logo">
+				LOGO / HOME
+			</div>
+		</a>
+	</div>            
+	<div class="right-header">
+		<div class="account">
+			<button id='loginBtn' style=" <?php if(isset($_SESSION["userNickname"])){echo "display:none";}else{echo "display:inline";}?> ">Accedi</button>
+			<span style=" <?php if(isset($_SESSION["userNickname"])){echo "display:inline";}else{echo "display:none";}?> "><?php echo $welcome.$_SESSION["userNickname"]; ?></span>
+			<a href='gymlogout.php' style=" <?php if(isset($_SESSION["userNickname"])){echo "display:inline";}else{echo "display:none";}?> "><button type='button'>Esci</button></a>
+			<button id='regBtn' style=" <?php if(isset($_SESSION["userNickname"])){echo "display:none";}else{echo "display:inline";}?> ">Registrati</button>
+		</div>
+	</div>
+</div> <!-- .header -->
+
+
+
+
+
+<div style="margin-left:10%;">
+	<?php
+		for ($test = 0; $test<=5; $test=$test+0.1){
+			echo $test ." = ". round($test * 2) / 2 . "<br>";
+		}
+	?>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+//$infoQuery = mysqli_query($connect," SELECT * FROM gym_list WHERE gym_id = '$idGym' ");	    !!!OLD!!!
+$infoQuery = mysqli_query($connect,"
+	SELECT gym_list.*, comments.comment, ratings.rating 
+	FROM gym_list 
+	LEFT JOIN ratings ON gym_list.gym_id=ratings.gym_id 
+	LEFT JOIN comments ON gym_list.gym_id=comments.gym_id 
+	WHERE (comments.user_id = '2' OR ratings.user_id = '2') AND (gym_list.gym_id = '$idGym')
+");// !!! NON CORRETTA !!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

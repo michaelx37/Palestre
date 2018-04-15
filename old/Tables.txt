@@ -1,0 +1,99 @@
+Tabella: Palestre			Tabella: Users			Tabella: Commenti		Tabella: Voto
+
+ID_palestra					ID_user					ID_palestra				ID_palestra
+Nome						Nickname				ID_user					ID_user
+Posizione					Nome					Commento				Voto
+Proprietario				Cognome										
+Telefono					Mail				
+Fax							Età					
+Sito						Sesso				
+Mail						Avatar
+Descrizione					Login_token
+Orari						Last_login
+Icona						Last_login_temp
+Coordinate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

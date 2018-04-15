@@ -1,0 +1,486 @@
+* {box-sizing:border-box;}
+
+body {
+	/*background-color:#808080;*/
+	background-color:#FFFFFF;
+	margin:auto;
+	overflow:auto;
+	font-weight:inherit;
+	font-family:Arial, Helvetica, sans-serif;	
+	position:relative;
+	min-width:400px;
+}
+
+
+
+.container::after {
+    content:"";
+    clear:both;
+    display:table;
+}
+[class*="col-"] {
+    width:100%;
+}
+
+
+
+#headerAlt {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:100%;
+	overflow:hidden;
+	background-color:#0099FF;
+	box-shadow: 0px 4px 8px #888888;
+}
+.leftHeaderAlt {
+	position:relative;
+	float:left;
+}
+.rightHeaderAlt {
+	position:relative;
+	float:right;
+}
+.headerBtn {
+	display:block;
+	float:left;
+    padding:14px 16px;
+	text-align:center;
+	font-size:17px;
+	color:#FFF;
+	text-decoration:none;
+	background-color:#0099FF;
+}
+.headerBtn:hover {
+	color:#0099FF;
+	background-color:#FFF;
+	cursor:pointer;	
+}
+.userAvatar {
+	display:block;
+	float:left;
+	height:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	border-radius: 50%;
+    padding: 24px;
+}
+
+.userAvatarAlt {
+	display:block;
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	border-radius: 50%;
+    padding: 24.5px;
+}
+
+
+.content {
+	position:relative;
+	z-index:-1;
+}
+.cardContainer {
+	/*background-color:#0099FF;*/
+	width:100%;
+	color:#000;
+	position:absolute;
+	transform:translateX(-50%);
+	left:50%;
+	margin-top:50px;
+	/*margin-top:8px;*/
+}
+#card {
+	display:block;
+	background-color:#96F;
+	height:180px;
+	width:95%;
+	margin:8px auto;
+	overflow:hidden;
+	cursor:pointer;
+	text-decoration:none;
+	color:#000;
+	box-shadow: 0px 4px 15px #888888;
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+}
+#card:hover {
+	display:block;
+	background-color:#96F;
+	height:180px;
+	width:95%;
+	margin:8px auto;
+	overflow:hidden;
+	border-style:ridge;
+	border-color:#FFF;
+	cursor:pointer;
+	text-decoration:none;
+	color:#000;
+}
+#card:visited {
+	cursor:pointer;
+	text-decoration:none;
+	color:#000;
+}
+#card:active {
+	cursor:pointer;
+	text-decoration:none;
+	color:#000;
+}
+
+.cardImage{
+	float:left;
+	display:inline;
+	background-repeat:no-repeat;
+	background-position:left;
+	background-size:contain;
+	width:150px;
+	height:100%;
+}
+.cardDetails{
+	float:left;
+	display:inline;
+	margin-left:5%;
+}
+.cardHeader{
+	text-align:center;
+	display:block;
+}
+.cardInfo{
+	display:block;
+}
+
+.pagContainer {
+	text-align:center;
+}
+.pagination {
+	display: inline-block;
+}
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+	margin: 0 4px;
+}
+.pagination a.active {
+	background-color: #6BA2F3;
+	color: white;
+	border: 1px solid #6BA2F3;
+}
+.pagination a:hover:not(.active) {
+	background-color: #ddd;
+}
+
+/* The Modal (background) */
+.loginModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* LOGIN MODAL */
+/* Modal Content/Box */
+.loginModalContent {
+    background-color: #fefefe;
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%; /* Could be more or less, depending on screen size */
+	/*max-width:550px;*/
+}
+.logInput{
+	width:100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+/* REGISTRATION MODAL */
+.regModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.regModalcontent {
+    background-color: #fefefe;
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%; /* Could be more or less, depending on screen size */
+}
+.regInput {
+	width:100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+.regInput:focus {
+    border: 2px solid #0099FF;
+}
+.regBtn {
+	background-color:#0099FF;
+	color:#FFFFFF;
+	width:100%;
+    padding: 10px 18px;
+}
+
+
+
+
+@media only screen and (min-width:650px) {
+	
+	#headerAlt {
+		position:fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		overflow:hidden;
+		background-color:#0099FF;
+		box-shadow: 0px 4px 8px #888888;
+	}
+	.leftHeaderAlt {
+		position:relative;
+		float:left;
+	}
+	.rightHeaderAlt {
+		position:relative;
+		float:right;
+	}
+	.headerBtn {
+		display:block;
+		float:left;
+		padding:14px 16px;
+		text-align:center;
+		font-size:17px;
+		color:#FFF;
+		text-decoration:none;
+		background-color:#0099FF;
+	}
+	.headerBtn:hover {
+		color:#0099FF;
+		background-color:#FFF;
+		cursor:pointer;	
+	}
+	.userAvatar {
+		display:block;
+		float:left;
+		height:100%;
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:cover;
+		border-radius: 50%;
+		padding: 24px;
+	}
+	
+.userAvatarAlt {
+	display:block;
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	border-radius: 50%;
+    padding: 24.5px;
+}
+	
+	
+	
+
+	
+	.content {
+		position:relative;
+		z-index:-1;
+	}
+
+
+	.filterSearchContainer {
+		position:fixed;
+		top:70px;
+		left:0px;
+		width:250px;
+		height:500px;
+		background-color:#6BA2F3;
+		padding:18px 12px;
+	}
+	.filterSearch {
+		width:100%;
+		color:#FFFFFF;
+	}.filterInputs {
+		width:100%;
+		margin-top:4px;
+		margin-bottom:8px;
+		height:26px;
+	}
+	
+		
+	.cardContainer {
+		/*background-color:#F60;*/
+		width:55%;
+		color:#000;
+		position:absolute;
+		transform:translateX(-50%);
+		left:50%;
+		margin-top:70px;
+	}
+	#card {
+		display:block;
+		background-color:#6BA2F3;
+		height:150px;
+		width:100%;
+		margin:14px auto;
+		cursor:pointer;
+		text-decoration:none;
+		color:#000;
+		box-shadow: 0px 4px 15px #888888;
+		/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+	}
+	#card:hover {
+		display:block;
+		background-color:#6BA2F3;
+		height:170px;
+		width:100%;
+		margin:14px auto;
+		border-style:ridge;
+		border-color:#FFF;
+		cursor:pointer;
+		text-decoration:none;
+		color:#000;
+	}
+	#card:visited {
+		display:block;
+		/*background-color:#96F;*/
+		height:170px;
+		width:100%;
+		margin:14px auto;
+		border-style:groove;
+		border-color:#FFF;
+		cursor:pointer;
+		text-decoration:none;
+		color:#000;
+	}
+	#card:active {
+		cursor:pointer;
+		text-decoration:none;
+		color:#000;
+	}
+	.cardImage{
+		float:left;
+		display:inline;
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size:contain;
+		/*width:200px;*/
+		width:25%;
+		height:100%;
+	}
+	.cardDetails{
+		float:left;
+		display:inline;
+		margin:none;/*
+		margin-left:5%;*/
+		width:70%;
+		height:100%;
+	}
+	/*.cardDetails:hover{
+		float:left;
+		display:inline;
+		margin:none;
+		/*margin-left:5%;*//*
+		width:75%;
+		height:100%;
+		cursor:pointer;
+		border-style:groove;
+	}*/
+	.cardHeader{
+		text-align:center;
+		display:block;
+		width:100%;
+	}
+	.cardInfo{
+		display:block;
+		width:100%;
+	}
+
+	.pagContainer {
+		text-align:center;
+	}
+	.pagination {
+		display: inline-block;
+	}
+	.pagination a {
+		color: black;
+		float: left;
+		padding: 8px 16px;
+		text-decoration: none;
+		transition: background-color .3s;
+		border: 1px solid #ddd;
+		margin: 0 4px;
+	}
+	.pagination a.active {
+		background-color: #6BA2F3;
+		color: white;
+		border: 1px solid #6BA2F3;
+	}
+	.pagination a:hover:not(.active) {
+		background-color: #ddd;
+	}
+	
+	
+	#map {
+		position:fixed;
+		top:70px;
+		right:0px;
+		width:250px;
+		height:500px;
+		background-color:#FF9900;
+		padding:12px 12px;
+	}
+	
+	
+	.loginModalContent {
+		width: 80%; /* Could be more or less, depending on screen size */
+		max-width:550px;
+    margin: 4% auto; /* 15% from the top and centered */
+	}
+	.regModalcontent {
+		width: 80%; /* Could be more or less, depending on screen size */
+		max-width:550px;
+    margin: 4% auto; /* 15% from the top and centered */
+	}
+	
+}

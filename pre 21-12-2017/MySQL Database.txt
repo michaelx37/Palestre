@@ -1,0 +1,199 @@
+CREATE DATABASE testDB;
+
+// TABELLA CORRETTA
+CREATE TABLE gym_list (
+	gym_id int NOT NULL AUTO_INCREMENT,
+	
+	gym_name varchar(255) NOT NULL,
+	
+	gym_owner varchar(255),
+	
+	gym_location varchar(255),
+	
+	gym_coordinates varchar(255),
+	
+	gym_telephone varchar(255),
+	
+	gym_fax varchar(255),
+	
+	gym_website varchar(255),
+	
+	gym_mail varchar(255),
+	
+	gym_description text,
+	
+	gym_hours varchar(255),
+	
+	gym_icon varchar(255),
+
+	PRIMARY KEY (gym_id)
+) ENGINE=INNODB;
+
+
+
+CREATE TABLE user_list (
+	user_id int NOT NULL AUTO_INCREMENT,
+	
+	user_nickname varchar(255) NOT NULL,
+	
+	user_password varchar(255) NOT NULL,
+	
+	user_login_token varchar(255),
+	
+	user_last_login timestamp,
+	
+	user_last_login_temp timestamp,
+	
+	user_last_name varchar(255) NOT NULL,
+	
+	user_first_name varchar(255) NOT NULL,
+	
+	user_bday varchar(255) NOT NULL,
+	
+	user_gender varchar(255) NOT NULL,
+	
+	user_mail varchar(255) NOT NULL,
+	
+	user_avatar varchar(255),
+	
+	PRIMARY KEY (user_id)
+) ENGINE=INNODB;
+
+
+
+CREATE TABLE comments (
+	comment_id int NOT NULL AUTO_INCREMENT,
+
+	gym_id int,
+	
+	user_id int,
+	
+	comment text,
+	
+	PRIMARY KEY (comment_id),
+	
+	FOREIGN KEY (gym_id) REFERENCES gym_list(gym_id),
+	
+	FOREIGN KEY (user_id) REFERENCES user_list(user_id)
+) ENGINE=INNODB;
+
+
+
+CREATE TABLE ratings (
+	rating_id int NOT NULL AUTO_INCREMENT,
+
+	gym_id int,
+	
+	user_id int,
+	
+	rating float(5,1),
+	
+	PRIMARY KEY (rating_id),
+	
+	FOREIGN KEY (gym_id) REFERENCES gym_list(gym_id),
+	
+	FOREIGN KEY (user_id) REFERENCES user_list(user_id)
+) ENGINE=INNODB;
+
+
+
+//	TABELLA TEMPORANEA
+
+CREATE TABLE gym_list (
+	gym_id int NOT NULL AUTO_INCREMENT,
+	
+	gym_name varchar(255) NOT NULL,
+	
+	gym_owner varchar(255),
+	
+	gym_location varchar(255),
+	
+	gym_coordinates varchar(255),
+	
+	gym_telephone varchar(255),
+	
+	gym_fax varchar(255),
+	
+	gym_website varchar(255),
+	
+	gym_mail varchar(255),
+	
+	gym_description text,
+	
+	gym_hours varchar(255),
+	
+	gym_icon varchar(255),
+
+	PRIMARY KEY (gym_id)
+) ENGINE=INNODB;
+
+
+
+CREATE TABLE user_list (
+	user_id int NOT NULL AUTO_INCREMENT,
+	
+	user_nickname varchar(255) NOT NULL,
+	
+	user_password varchar(255) NOT NULL,
+	
+	user_login_token varchar(255),
+	
+	user_last_login timestamp,
+	
+	user_last_login_temp timestamp,
+	
+	user_last_name varchar(255),
+	
+	user_first_name varchar(255),
+	
+	user_bday varchar(255),
+	
+	user_gender varchar(255),
+	
+	user_mail varchar(255),
+	
+	user_avatar varchar(255),
+	
+	PRIMARY KEY (user_id)
+) ENGINE=INNODB;
+
+
+
+CREATE TABLE comments (
+	comment_id int NOT NULL AUTO_INCREMENT,
+
+	gym_id int,
+	
+	user_id int,
+	
+	comment text,
+	
+	PRIMARY KEY (comment_id),
+	
+	FOREIGN KEY (gym_id) REFERENCES gym_list(gym_id),
+	
+	FOREIGN KEY (user_id) REFERENCES user_list(user_id)
+) ENGINE=INNODB;
+
+
+
+CREATE TABLE ratings (
+	rating_id int NOT NULL AUTO_INCREMENT,
+
+	gym_id int,
+	
+	user_id int,
+	
+	rating float(5,1),
+	
+	PRIMARY KEY (rating_id),
+	
+	FOREIGN KEY (gym_id) REFERENCES gym_list(gym_id),
+	
+	FOREIGN KEY (user_id) REFERENCES user_list(user_id)
+) ENGINE=INNODB;
+
+
+
+
+

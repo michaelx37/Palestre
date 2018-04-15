@@ -1,0 +1,230 @@
+* {box-sizing:border-box;}
+
+body {
+	/*background-color:#808080;*/
+	background-color:#FFFFFF;
+	margin:auto;
+	overflow:auto;
+	font-weight:inherit;
+	font-family:Arial, Helvetica, sans-serif;	
+	position:relative;
+	min-width:400px;
+}
+
+
+
+.container::after {
+    content:"";
+    clear:both;
+    display:table;
+}
+[class*="col-"] {
+    width:100%;
+}
+
+
+
+#headerAlt {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:100%;
+	overflow:hidden;
+	background-color:#0099FF;
+	box-shadow: 0px 4px 8px #888888;
+}
+.leftHeaderAlt {
+	position:relative;
+	float:left;
+}
+.rightHeaderAlt {
+	position:relative;
+	float:right;
+}
+.headerBtn {
+	display:block;
+	float:left;
+    padding:14px 16px;
+	text-align:center;
+	font-size:17px;
+	color:#FFF;
+	text-decoration:none;
+	background-color:#0099FF;
+}
+.headerBtn:hover {
+	color:#0099FF;
+	background-color:#FFF;
+	cursor:pointer;	
+}
+.userAvatar {
+	display:block;
+	float:left;
+	height:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	border-radius: 50%;
+    padding: 24px;
+}
+
+
+
+.content {
+	position:relative;
+	z-index:-1;
+	margin-top:50px;
+}
+
+/* The Modal (background) */
+.loginModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* LOGIN MODAL */
+/* Modal Content/Box */
+.loginModalContent {
+    background-color: #fefefe;
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%; /* Could be more or less, depending on screen size */
+	/*max-width:550px;*/
+}
+.logInput{
+	width:100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+/* REGISTRATION MODAL */
+.regModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.regModalcontent {
+    background-color: #fefefe;
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%; /* Could be more or less, depending on screen size */
+}
+.regInput {
+	width:100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+.regInput:focus {
+    border: 2px solid #0099FF;
+}
+.regBtn {
+	background-color:#0099FF;
+	color:#FFFFFF;
+	width:100%;
+    padding: 10px 18px;
+}
+
+
+
+@media only screen and (min-width:650px) {
+	* {box-sizing:border-box;}
+		
+	#headerAlt {
+		position:fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		overflow:hidden;
+		background-color:#0099FF;
+		box-shadow: 0px 4px 8px #888888;
+	}
+	.leftHeaderAlt {
+		position:relative;
+		float:left;
+	}
+	.rightHeaderAlt {
+		position:relative;
+		float:right;
+	}
+	.headerBtn {
+		display:block;
+		float:left;
+		padding:14px 16px;
+		text-align:center;
+		font-size:17px;
+		color:#FFF;
+		text-decoration:none;
+		background-color:#0099FF;
+	}
+	.headerBtn:hover {
+		color:#0099FF;
+		background-color:#FFF;
+		cursor:pointer;	
+	}
+	.userAvatar {
+		display:block;
+		float:left;
+		height:100%;
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:cover;
+		border-radius: 50%;
+		padding: 24px;
+	}
+	
+	
+	
+	.content {
+		position:relative;
+		z-index:-1;
+		margin-top:65px;
+	}
+	
+	.loginModalContent {
+		width: 80%; /* Could be more or less, depending on screen size */
+		max-width:550px;
+    margin: 4% auto; /* 15% from the top and centered */
+	}
+	.regModalcontent {
+		width: 80%; /* Could be more or less, depending on screen size */
+		max-width:550px;
+    margin: 4% auto; /* 15% from the top and centered */
+	}
+		
+}

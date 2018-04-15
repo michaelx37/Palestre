@@ -1,0 +1,49 @@
+@media only screen and (min-width:650px) {
+
+#footer {
+	position:relative;
+	left:0px;
+	bottom:30px;
+	width:100%;
+	overflow:hidden;
+	background-color:#0099FF;
+	box-shadow: 0px 4px 8px #888888;
+}
+.leftFooter {
+	position:relative;
+	float:left;
+}
+.rightFooter {
+	position:relative;
+	float:right;
+}
+.footerBtn {
+	display:block;
+	float:left;
+    padding:14px 16px;
+	text-align:center;
+	font-size:17px;
+	color:#FFF;
+	text-decoration:none;
+	background-color:#0099FF;
+}
+.footerBtn:hover {
+	color:#0099FF;
+	background-color:#FFF;/*
+	border-color:#0099FF;
+	border-style:solid;
+	border-width:1px;*/
+	cursor:pointer;	
+}
+.userAvatar {
+	display:block;
+	float:left;
+	height:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	border-radius: 50%;
+    padding: 24px;
+}
+
+}

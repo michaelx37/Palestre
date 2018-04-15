@@ -1,0 +1,24 @@
+$pageNum = 1;
+					
+	function maxPages() {
+		
+		$resPPage = 10;
+		
+		for ($qnr = 1; $qnr < 22; $qnr++) {
+			
+			$pagesRaw = round(/*$queryNumRows*/$qnr/$resPPage,0,PHP_ROUND_HALF_UP);
+			//echo $qnr."/10 = ".$qnr/$resPPage." arrotondato:  ".$pagesRaw."<br>";
+			
+			if ($pagesRaw == $qnr/$resPPage) {
+				$maxPages = $pagesRaw;
+				//echo "max pages (=):  ".$maxPages."<br><br>";
+			} elseif ($pagesRaw < $qnr/$resPPage) {
+				$maxPages = $pagesRaw+1;
+				//echo "max pages (+1):  ".$maxPages."<br><br>";
+			} else {
+				$maxPages = $pagesRaw;
+				//echo "max pages:  ".$maxPages."<br><br>";
+			}
+		}
+	}
+	maxPages();
